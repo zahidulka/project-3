@@ -1,0 +1,725 @@
+/*Normalizer Basic typography
+--------------------------------------------------*/
+*{padding: 0; margin: 0; }
+html {
+	 font-family: 'Roboto', sans-serif;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+html,body {
+	height: 100%;
+    height: 100%;
+	margin: 0;
+	position:relative;
+}
+body {margin: 0; }
+img{
+	max-width:100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden],
+template {
+	display: none;
+}
+a, img,input,textarea{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+a {
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	outline: 0;
+	text-decoration:none;
+}
+img {
+	border: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+pre {
+	overflow: auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+button {overflow: visible;}
+button,
+select {
+text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+}
+optgroup {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #252525;
+	line-height: 25px;
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin: 0;
+}
+p {
+	color:#666;
+	margin: 0;
+}
+a,button{
+	font-weight:500;
+}
+input{
+	font-weight:400;
+}
+a{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	outline:none;
+	box-shadow:none;
+	text-decoration:none;
+	cursor:pointer;
+}
+a:hover{
+	text-decoration:none;
+}
+img,a,input,h1, h2, h3, h4, h5, h6{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+code, kbd, tt, var {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+}
+
+ul,ul li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111; 
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+/* All color
+============================================*/
+.white{
+    color: #fff;
+}
+
+
+/*============================================================================
+ All  kind of inside page.
+==============================================================================*/
+/*About section*/
+a.actives {
+    background: #FF9800;
+}
+.aboutus-text h2, .aboutus-text p {
+    margin-bottom: 17px;
+}
+.video-popup:before {
+    position: absolute;
+    content: "";
+    font-size: 65px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .4s ease;
+    opacity: .5;
+}
+.video-popup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+a.video-icon:before {
+    position: absolute;
+    content: "\f144";
+    font-family: FontAwesome;
+    font-size: 78px;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 66px;
+    color: #fff;
+    border-radius: 100%;
+    opacity: 1;
+    margin-left: -35px;
+    margin-top: -35px;
+}
+section.about-teacher-section .section-title{
+    margin-bottom: 0;
+}
+section.about-teacher-section {
+    padding: 80px 0;
+}
+.aboutus-padding {
+    padding-top: 80px;
+}
+
+a.video-icon:before:hover, .video-popup:hover{
+    opacity: 1;
+}
+.single-page-cover {
+    background: url(../img/pagecover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.page-cover-wrap h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-cover-wrap a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.page-cover-wrap {
+    text-align: center;
+}
+
+.table-wrapp {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-page-cover:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+/*====================================== 
+    Accordion Section
+======================================*/
+.panel.panel-default {border: 1px solid #ddd;margin: 8px 0;border-radius: 5px;}
+h4.panel-title {background: #6f42c1;color: #fff;padding: 12px 25px;border: 1px solid transparent;}
+.panel-body {padding: 15px 25px;}
+h4.panel-title a{color: #fff; text-decoration: none;}
+i.fa.fa-plus, i.fa.fa-minus {
+        float: right;
+        font-size: 20px;
+        line-height: 18px;
+        display: none;
+        background: #fff;
+        padding: 6px 6px 3px 6px;
+        color: #6F42C1;
+        border-radius: 3px;
+}
+h4.panel-title a[aria-expanded=true] i.fa-minus {display: block;}
+h4.panel-title a[aria-expanded=false] i.fa-plus {display: block;}
+div#accordion {padding-top: 10px; box-shadow: 0 0 27px 10px #0000006b;}
+p strong {font-size: 19px;padding: 2px;}
+
+.accordion-title> h2 {position: relative;display: inline-block;}
+.accordion-title> h2:before {
+    width: 45px;
+    height: 3px;
+    content: "";
+    background: #6f42c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 38px;
+    margin-left: 10px;
+}
+.accordion-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.accordion-title> h2 {
+    position: relative;
+    display: inline-block;
+    padding: 9px;
+    margin-bottom: 15px;
+}
+.faq-wrapper {padding: 40px 0;}
+.inside-padding {padding: 50px 0;}
+.col-md-6.col-12:hover .video-popup::before {
+    opacity: .3;
+}
+/*single video course*/
+.single-video-course:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+.single-video-course img {
+    width: 100%;
+    height: 100%;
+}
+.single-video-course {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.single-video-course i {
+    position: absolute;
+    font-size: 81px;
+    text-align: center;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -40px;
+    opacity: .6;
+    transition: all .4s ease;
+    color: #f1f1f1;
+    line-height: 25px;
+    border-radius: 74px;
+    text-align: center;
+}
+.single-video-course:hover i {
+    color: #dc3545;
+    opacity: 1;
+    transition: all .4s ease;
+}
+.sidebar-wrapper {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px #00000033;
+}
+aside.right-sideber {border-left: 1px solid #ddd;}
+img.single-event-img {width: 100%;}
+/*single event sideber*/
+.single-event-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 0 10px #0000002e;
+    padding-bottom: 40px;
+}
+.sidebar-feature{
+    padding: 20px 0px;
+    margin: 0 20px;
+    border-bottom: 2px solid #0000003d;
+}
+.sidebar-feature img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+}
+.fetured-meta a {display: block;}
+.fetured-meta {padding-left: 80px;}
+.fetured-meta span {padding-right: 10px;}
+.fetured-meta span i.fa {padding-right: 5px;}
+aside.right-sideber, .event-content-wrapper {margin: 80px 0;}
+.sidebar-wrapper h4 {
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+    padding: 20px 0px 0px 34px;
+}
+.sidebar-wrapper h4:before {
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    content: "";
+    background: #6f42c1;
+    top: 20px;
+    left: 22px;
+}
+.date-picker span i{padding-right: 5px;}
+.date-picker span {border-right: 1px solid #000;padding-right: 0;padding-right: 20px;}
+.date-picker span:last-child {border-right: none;padding-left: 20px;padding-right: 0;}
+.date-picker {padding: 15px 0;}
+.single-event-content h2 {
+    margin-bottom: 25px;
+    font-size: 33px;
+}
+.single-event-content p {margin: 30px 0;}
+.single-images-featured img {width: 500px;}
+.sidebar-wrapper h4 span {color: #6f42c1;}
+.col-12.col-md-6>.slide-content-wrapper {margin-top: 0;margin-bottom: 40px;}
+.all-blog-wrapper {padding: 80px 0;}
+.sidebar-feature:last-child, 
+.single-feature:last-child {border-bottom: none;}
+.page-cover-wrap>a i {padding: 0 6px;}
+
+.page-cover-wrap>a {padding: 5px 11px 7px 11px; border-radius: 5px;}
+.actives {color: #fff; opacity: 1}
+ul.navbar-nav li.actives a{color: #fff}
+
+/*
+Contact information
+======================================================*/
+form.contact-form {padding: 20px;box-shadow: 0 0 25px #00000026;}
+.contact-wrapper form.contact-form .group-box.button button.btn {padding: 10px 20px;font-size: 13px;}
+.group-box>textarea, .group-box>input {border: none;box-shadow: 0 1px 30px #00000024;}
+.group-box {margin: 18px 0;}
+.group-box.button {margin-bottom: 0;}
+.google-map {width: 100%;height: 449px;}
+img.google-img {width: 100%;height: 100%;}
+.contact-info-footer {
+    padding-top: 60px;
+    padding-bottom: 17px;
+    color: #000;
+}
+.contact-info-footer .row .col-md-3 .contact-wrapper span{color: #000;}
+.contact-info-footer .row .col-md-3 .contact-wrapper i, 
+.contact-info-footer .row .col-md-3 .contact-wrapper a i {
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    color: #00000078;
+    font-size: 19px;
+    border-radius: 40px;
+    position: absolute;
+    border: 3px solid #ddd;
+    transition: all .4s ease;
+    top: -10px;
+}
+.contact-info-footer .row .col-md-3 .contact-wrapper a:hover i, 
+.contact-info-footer .row .col-md-3 .contact-wrapper i:hover{
+    color: #fff;
+    border: 3px solid transparent;
+    transition: all .4s ease;
+}
+.contact-information-area{
+}
+
+.single-event-content ul.blog-link li {display: inline-block;}
+.single-event-content ul.blog-link {margin: 0;padding: 0;list-style: none;}
+/*single blog contact form*/
+.contact-info-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-info-title> p {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* All testimonial
+=======================*/
+.aboutus-padding.custom-padding {
+    padding-bottom: 80px;
+}
+/*all Blog and course*/
+section.allcourse-padding {
+    padding: 60px 0;
+}
+/* single course
+==============================*/
+.featured-text h2, .course-requirement h2 {margin-bottom: 20px;}
+section.single-course {margin: 0;padding: 0;background: #f6f6f6;}
+section.single-course .single-main {background: #fff;padding: 30px;margin: 40px;}
+img.single-course-img {width: 100%;height: 100%;}
+img.course-meta {width: 60px;border-radius: 50%;}
+.featured-meta {padding: 29px 0;}
+p.single-pric {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6f42c1;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+.course-requirement {
+    margin-top: 20px;
+}
+ul.requirment li span {
+    font-size: 14px;
+    border: 1px solid #6f42c14f;
+    width: 26px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 25px;
+    margin-right: 15px;
+    color: #6f42c1;
+}
+ul.requirment li {
+    padding: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
